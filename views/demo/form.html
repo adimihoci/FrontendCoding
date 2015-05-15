@@ -1,0 +1,28 @@
+<div class="container">
+
+    <!--TODO #5 create the ng-form element -->
+    <ng-form name="myForm" ng-controller="Form" class="my-form">
+        input : <input name="input" ng-model="userType" required>
+        <span class="error" ng-show="myForm.input.$error.required">Required</span>
+        <!--TODO#7-->
+        <br>
+        userType = {{userType}}<br><br>
+        <p>Input properties</p>
+        <!--TODO#6-->
+        myForm.input.$pristine = {{myForm.input.$pristine}}<br>
+        myForm.input.$dirty = {{myForm.input.$dirty}}<br>
+        myForm.input.$valid = {{myForm.input.$valid}}<br>
+        myForm.input.$invalid = {{myForm.input.$invalid}}<br>
+        myForm.input.$error = {{myForm.input.$error}}<br><br>
+        <p>Form Properties</p>
+        <!--TODO #5 list form properties values-->
+        myForm.input.$pristine = {{myForm.$pristine}}<br>
+        myForm.input.$dirty = {{myForm.$dirty}}<br>
+        myForm.input.$valid = {{myForm.$valid}}<br>
+        myForm.input.$invalid = {{myForm.$invalid}}<br>
+        myForm.input.$submitted = {{myForm.$submitted}}<br>
+        myForm.input.$error = {{myForm.$error}}<br>
+    </ng-form>
+
+
+</div>
